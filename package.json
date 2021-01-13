@@ -1,0 +1,31 @@
+{
+  "name": "strapi-plugin-serve-ui",
+  "version": "0.0.1",
+  "description": "This plugin serves user interface from a folder or creates a proxy to redirect ui requests to a specified port.",
+  "strapi": {
+    "name": "serve-ui",
+    "icon": "plug",
+    "description": "This plugin serves user interface from a folder or creates a proxy to redirect ui requests to a specified port."
+  },
+  "dependencies": {
+    "http-proxy-middleware": "^1.0.6",
+    "koa-connect": "^2.1.0"
+  },
+  "author": {
+    "name": "Bendegúz Cseresnyés",
+    "email": "cser.bende@gmail.com",
+    "url": "https://github.com/aPisC/strapi-plugin-serve-ui"
+  },
+  "maintainers": [
+    {
+      "name": "Bendegúz Cseresnyés",
+      "email": "cser.bende@gmail.com",
+      "url": "https://github.com/aPisC/strapi-plugin-serve-ui"
+    }
+  ],
+  "engines": {
+    "node": ">=10.16.0 <=14.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
