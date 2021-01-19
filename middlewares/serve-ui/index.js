@@ -18,7 +18,11 @@ const proxy = require("http-proxy-middleware").createProxyMiddleware;
 module.exports = (strapi) => {
   return {
     async initialize() {
-      const config = strapi.config["serve-ui"];
+      const config =
+        (strapi.config.middleware &&
+          strapi.config.middleware.settings &&
+          strapi.config.middleware.settings["serve-ui"]) ||
+        {};
 
       if (config.proxy) {
         const host =
